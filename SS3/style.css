@@ -1,0 +1,48 @@
+.container {
+    /* Sắp xếp các phần tử theo chiều ngang */
+    display: flex;
+    /* Căn chỉnh theo chiều ngang */
+    justify-content: center;
+    /* Căn chỉnh theo Chiều dọc */
+    align-items: center;
+    /* Điều chỉnh độ cao của khối container */
+    height: 100vh;
+    /* Độ rộng container là 100% */
+    width: 100%;
+}
+
+.col-1{
+    /* Cột thứ nhất là 50% */
+    width: 50%;
+}
+.col-2{
+    /* Cột thứ hai là 50% */
+    width: 50%;
+}
+
+.container .item {
+    /* Khoảng cách từ nội dung ra tới border */
+    padding: 15px;
+    /* Khoảng cách từ phần tử này tới phần tử khác */
+    margin: 16px;
+    /* Chỉnh màu chữ */
+    color: cornflowerblue;
+    /* Chỉnh kích thước chữ */
+    font-size: 25px;
+    /* Chỉnh kiểu chữ */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Chỉnh màu nền */
+    background-color: rgb(10, 235, 243);
+    /* Chỉnh khung viền */
+    border: 2px solid blue;
+    /* Chỉnh góc khung viền */
+    border-radius: 16px;
+    /* Chỉnh căn lề chữ */
+    text-align: center;
+}
+
+/* Hiệu ứng hover: nghĩa hiệu ứng khi đưa con trỏ chuột vào */
+.container .item:hover{
+    background-color: rgb(14, 122, 125);
+    color: rgb(153, 184, 242);
+}
