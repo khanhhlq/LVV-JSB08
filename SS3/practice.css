@@ -1,0 +1,47 @@
+body {
+    /* Định dạng chung về kiểu chữ */
+    /* Định dạng chung về chiều cao và chiều rộng */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    /* Setting mặc định ban đầu của mình */
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+ul {
+    display: flex;
+}
+
+.col-1 li{
+    list-style: none;
+}
+
+.col-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-2 li {
+    list-style: none;
+    padding: 15px;
+    text-align: center;
+}
+
+.col-1{
+    width: 10%;
+}
+
+.col-2{
+    width: 90%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: red
+}
