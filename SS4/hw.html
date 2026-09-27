@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Tập Về CSS Position</title>
+    <!-- Liên kết css -->
+    <link rel="stylesheet" href="hw.css">
+</head>
+<body>
+    <header class="menu-absolute">
+        <div class="logo">
+            <strong>MyWebsite</strong>
+            (Absolute Menu)
+        </div>
+        <nav>
+            <a href="#">Trang chủ</a>
+            <a href="#">Sản phẩm</a>
+            <a href="#">Liên hệ</a>
+        </nav>
+    </header>
+
+    <div class="notification-fixed">
+        ⚠️ [Fixed] Bạn có 1 thông báo mới!
+    </div>
+
+    <main class="content-wrapper">
+        <h2>Demo các loại thuộc tính postion trong CSS</h2>
+        <p style="color: #666; font-style: italic;">
+            *Mẹo nhỏ: Bạn hãy thử cuộn chuột xuống phía dưới để quan sát 
+            cách di chuyển của từng thành phần nhé!
+        </p>
+
+        <hr>
+
+        <h3>1. Vị trí Static (mặc định)</h3>
+        <p class="paragraph-static">
+            Đây là một đoạn văn bản bình thường sử dụng thuộc tính <strong>position: static</strong>. 
+            Thành phần này nằm hoàn toàn trong dòng chảy tự nhiên của văn bản, không bị dịch chuyển 
+            bởi các thuộc tính điều hướng như top, bottom, left, right và sẽ xếp chồng lần lượt từ 
+            trên xuống dưới.
+        </p>
+
+        <hr>
+        <h3>2. Vị trí Relative</h3>
+        <p>
+            Dưới đây là nút bấm được định vị bằng <strong>relative</strong> để 
+            đẩy nó về phía góc dưới bên phải khu vực nội dung:
+        </p>
+
+        <a href="#" class="btn-relative">Quay lại đầu trang</a>
+   
+    </main>
+</body>
+</html>
