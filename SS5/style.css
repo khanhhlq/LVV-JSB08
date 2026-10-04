@@ -1,0 +1,51 @@
+.block {
+    display: block;
+    background-color: #ccc;
+    padding: 10px;
+}
+
+span {
+    display: inline;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 5px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+.button1{
+    display: inline-block;
+    background-color: red;
+    color: white;
+    margin: 5px;
+    padding: 10px;
+}
+
+.button2{
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    margin: 5px;
+    padding: 10px;
+}
+
+h1 {
+    display: none;
+}
+
+@media only screen and (max-width: 1200px){
+    body {
+        background-color: red;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    body {
+        background-color: blue;
+    }
+}
