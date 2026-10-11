@@ -1,0 +1,27 @@
+body {
+    background-color: antiquewhite;
+    text-align: center;
+}
+h1 {
+    color: rgb(104, 185, 23);
+}
+p {
+    color: blue;
+    text-align: left;
+}
+li {
+    text-align: left;
+}
+img {
+    width: 50vh;
+}
+.kynang {
+    border: 2px solid blue;
+    width: fit-content;
+}
+button {
+    display: flex;
+    padding: 10px;
+    margin: 0px 1150px;
+}
+

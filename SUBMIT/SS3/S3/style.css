@@ -1,0 +1,55 @@
+p{
+    color:rgb(16, 243, 0);
+    font-size: 20px;
+    background-color:darkorchid;
+    /* 15px: cho top, bottom, left, right */
+    /*15px 16px 17px 18px: 15px cho top, 16px cho right, 17px cho bottom, 18px cho left */
+    padding: 10px 11px 12px 13px;
+    text-align: center;
+    margin:30px;
+}
+h1{
+    color:blueviolet;
+    font-size:60px;
+    font-family:'Segoe UI';
+    background-color:rgba(170, 255, 0, 0.951);
+    border: 5px;
+}
+.p-1{
+    color:aliceblue;
+
+}
+.p-2{
+    color:brown;
+
+}
+#p-3{
+    color:cornflowerblue;
+}
+div p {
+    color:chocolate;
+}
+div > p{
+    color:crimson;
+}
+div  p {
+    color:darkblue;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height:100vh;
+    width:100%;
+
+
+}
+.container .item{
+    padding: 15px;
+    margin: 16px;
+    color:darkcyan;
+    font-size:18px;
+}
+.container .item:hover{
+    background-color:darkgoldenrod;
+}
