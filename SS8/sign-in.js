@@ -18,5 +18,4 @@ register.addEventListener("submit", function(event){
     } else {
         alert("Invalid username or password")
     }
-
 })
