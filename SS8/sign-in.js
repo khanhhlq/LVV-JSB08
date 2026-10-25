@@ -1,5 +1,5 @@
 // Đi tìm thẻ form bằng câu lệnh document.querySelector() 
-// và gán vào biến register
+// và gán vào biến register -
 let register = document.querySelector("form")
 
 // Thêm sự kiện submit cho thẻ form
