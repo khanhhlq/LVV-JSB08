@@ -12,10 +12,31 @@ register.addEventListener("submit", function(event){
     let name = document.getElementById("name").value.trim()
     let email = document.getElementById("email").value.trim()
     let password = document.getElementById("password").value.trim()
+    
+    if (localStorage.getItem("users")) {
+        // Lấy dữ liệu từ localStorage và chuyển đổi từ chuỗi JSON sang mảng
+        let users_data = JSON.parse(localStorage.getItem("users")) 
+        
+        users_data.push(
+            {
+                name: name,
+                email: email,
+                password: password
+            }
+        )
 
-    localStorage.setItem("name", name)
-    localStorage.setItem("email", email)
-    localStorage.setItem("password", password)
+        localStorage.setItem("users", JSON.stringify(users_data))
+        location.href = "sign-in.html" // Chuyển hướng sang trang sign-in.html
+    } else {
+        let users_data = [
+            {
+                name: name,
+                email: email,
+                password: password
+            }
+        ]
 
-    location.href = "sign-in.html" // Chuyển hướng sang trang sign-in.html
+        localStorage.setItem("users", JSON.stringify(users_data))
+        location.href = "sign-in.html" // Chuyển hướng sang trang sign-in.html
+    }
 })

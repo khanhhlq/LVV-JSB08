@@ -1,21 +1,21 @@
-// Đi tìm thẻ form bằng câu lệnh document.querySelector() 
-// và gán vào biến register -
-let register = document.querySelector("form")
+let login = document.querySelector("form")
 
-// Thêm sự kiện submit cho thẻ form
-register.addEventListener("submit", function(event){
-    event.preventDefault() // Ngăn chặn hành vi mặc định của thẻ form
+login.addEventListener("submit", function(event){
+    event.preventDefault()
 
-    // Kiểm tra xem người dùng đã nhập đầy đủ thông tin chưa
     let name = document.getElementById("name").value.trim()
     let password = document.getElementById("password").value.trim()
 
-    let storedName = localStorage.getItem("name")
-    let storedPassword = localStorage.getItem("password")
+    let users_data = JSON.parse(localStorage.getItem("users"))
 
-    if (name === storedName && password === storedPassword) {
-       location.href = "index.html" // Chuyển hướng sang trang index.html
+    let current_user = users_data.find(
+        u => u.name === name && u.password === password
+    )
+
+    if (current_user) {
+        localStorage.setItem("current_user", JSON.stringify(current_user))
+        location.href = "index.html"
     } else {
-        alert("Invalid username or password")
-    }
+        alert("Tên đăng nhập hoặc mật khẩu không đúng!")
+    }  
 })
